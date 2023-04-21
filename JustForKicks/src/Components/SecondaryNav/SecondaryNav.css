@@ -18,14 +18,20 @@
     align-items: center;
     padding: 10px 0;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 70%;
+    font-weight: 500;
+    height: 100%;
 }
 
 .navLists {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    font-size: 106%;
+}
+
+.navLists:hover {
+    cursor: pointer;
 }
 
 .navs2 {
@@ -68,4 +74,34 @@
 
 .material-symbols-outlined {
     cursor: pointer;
+}
+
+.drop {
+    position: absolute;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    width: 190px;
+    top: 167px;
+    background-color: #fff;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.conList {
+    font-size: 120%;
+    color:#000000;
+    padding: 10px;
+    font-family: 'Calibri';
+    font-size: 90%;
+}
+
+.conList:hover {
+    background-color: #F5761A;
+    color: #fff;
 }

@@ -3,15 +3,18 @@ import "./SearchList.css"
 import PropTypes from 'prop-types'
 import { IoMdClose } from 'react-icons/io'
 
+
 class SearchList extends React.Component {
     static propTypes = {
         shoes: PropTypes.object.isRequired
     }
 
     state = {
-        brands: this.props.shoes
+        brands: this.props.shoes,
+        
     }
 
+    
 
     render() {
         const brand = this.state.brands
@@ -21,7 +24,9 @@ class SearchList extends React.Component {
               {
               brand > 0 ? (
                 brand["results"]?.map(s => (
-                    <div className='shoes'>{s.name}</div>
+            
+                        <div className='shoes' >{s.name}</div>
+                        
                 ))
               ) : (
                 null

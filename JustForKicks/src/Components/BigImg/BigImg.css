@@ -6,11 +6,11 @@
     align-items: center;
     flex-direction: row;
     padding:0 30px;
-    background-color: rgb(112, 112, 112);
-    background-image: url("https://wallpapercave.com/wp/wp4571631.jpg");
+    /* background-image: url("https://wallpapercave.com/wp/wp4571631.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.4s ease-in-out;
 }
 
 .arrow {
@@ -19,4 +19,10 @@
     border-radius: 50%;
     padding: 10px;
     background-color: #fff;
+}
+
+.arrow:hover {
+    background-color: #F5761A;
+    color: #fff;
+    cursor: pointer;
 }

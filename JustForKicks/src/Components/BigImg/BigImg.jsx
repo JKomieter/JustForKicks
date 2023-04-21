@@ -4,21 +4,34 @@ import "./BigImg.css"
 
 export default class BigImg extends Component {
     state = {
-        shoe: []
+        shoe: [],
+        num: 0,
+        images: [
+            'https://wallpapercave.com/wp/wp4571631.jpg',
+            'https://www.sneakerhdwallpapers.com/wallpapers/2019/air-jordan-6-travis-scott-wallpaper-retina.jpg',
+            'https://th.bing.com/th/id/R.e652fd8885d7e5d2761f94363344b138?rik=ewSysGvc%2f16%2bWg&pid=ImgRaw&r=0'
+        ]
     }
 
-    componentDidMount() {
-        
+    handleHero = (e) => {
+        e.preventDefault();
+
+        if (this.state.num < this.state.images.length - 1) {
+            this.setState({num: ++this.state.num})
+        } else {
+            this.setState({num: 0})
+        }
+
     }
 
     render() {
         return (
-        <div className='BigImg'>
+        <div className='BigImg' style={{backgroundImage: `url(${this.state.images[this.state.num]})`}}>
             <div className="leftArrow">
-                <IoIosArrowBack size={29} className='arrow'/>
+                <IoIosArrowBack size={29} className='arrow' onClick={this.handleHero}/>
             </div>
             <div className="rightArrow">
-                <IoIosArrowForward size={29} className='arrow'/>
+                <IoIosArrowForward size={29} className='arrow' onClick={this.handleHero}/>
             </div>
         </div>
         )

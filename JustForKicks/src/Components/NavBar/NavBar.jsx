@@ -18,7 +18,7 @@ class NavBar extends React.Component {
         const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '6740a5ce38msh1b181d397537ea9p1a61cbjsn06fe669cfc16',
+                'X-RapidAPI-Key': '683a22922bmshf5a626e69c1fcc0p10b894jsn82aaf1320a66',
                 'X-RapidAPI-Host': 'the-sneaker-database.p.rapidapi.com'
             }
         };

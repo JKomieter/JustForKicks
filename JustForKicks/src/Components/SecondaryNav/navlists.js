@@ -1,15 +1,33 @@
 const navlists = [
         {
-            name: "home"
+            name: "home",
+            content: [
+                "Home1",
+                "Home2",
+                "Home3"
+            ]
         },
         {
-            name: "shop"
+            name: "shop",
+            content: [
+                "Category",
+                "My account",
+                "Cart",
+                "Wishlist",
+                "Checkout"
+            ]
         },
         {
-            name: "blog"
+            name: "blog",
+            content: [
+                "Author",
+                "Archive",
+                "Category"
+            ]
         },
         {
-            name: "contact"
+            name: "contact",
+            content: []
         }
 
 ]

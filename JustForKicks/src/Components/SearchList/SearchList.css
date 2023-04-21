@@ -60,3 +60,20 @@
     padding: 3px;
     background-color: #F5761A;;
 }
+
+.dropDownList {
+    position: absolute;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    width: 100px;
+}
+
+.conList {
+    font-size: 90%;
+}
