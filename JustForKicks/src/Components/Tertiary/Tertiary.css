@@ -1,0 +1,35 @@
+.Tertiary {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tertiaryBar {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 90%;
+    opacity: 0.8;
+    gap: 10px;
+}
+
+.tert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.support:hover {
+    color: #F5761A;
+}
+
+

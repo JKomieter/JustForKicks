@@ -1,0 +1,83 @@
+.arrivals {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topArrivals {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 160%;
+    opacity: 0.9;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.arrOne, .arrTwo, .arrThree {
+    flex: 3;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.arrOne:hover, .arrTwo:hover, .arrThree:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #F5761A;
+    color: #fff;
+}
+
+.arrOne:active, .arrTwo:active, .arrThree:active {
+    border-radius: 20px;
+    background-color: #F5761A;
+    color: #fff;
+}
+
+.arrFive {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.leftArr, .rightArr {
+    transition: all 0.2s;
+}
+
+.leftArr:hover, .rightArr:hover {
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: #F5761A;
+    color: #fff;
+}
+
+@media screen and (max-width: 785px) {
+    .topArrivals {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .arrOne, .arrTwo {
+        flex: 10;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .arrThree, .arrFive {
+        flex: 5;
+        width: 100%;
+        text-align: center;
+    }
+
+    .arrFive {
+        justify-content: end;
+    }
+}

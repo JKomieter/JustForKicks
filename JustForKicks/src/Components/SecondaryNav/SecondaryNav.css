@@ -1,0 +1,71 @@
+.secNav {
+    height: 50px;
+    padding: 10px;
+    font-family:  sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #fff;
+}
+
+.navs, .navs2 {
+    flex: 5;
+}
+
+.navs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 70%;
+}
+
+.navLists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navs2 {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 70%;
+    padding: 0 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu {
+    display: none;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 988px) {
+    .navs {
+        display: none
+    }
+
+    .menu {
+        display:flex;
+        color: #fff;
+    }
+}
+
+.social {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social:hover {
+    color: #F5761A;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+.searchShoes {
+    height: 100%;
+    position: relative;
+    z-index: 999;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /*  */
+    border-radius: 10px;
+}
+
+.shoes {
+    margin: 15px 0;
+    color: #000000;
+    font-size: 90%;
+    font-weight: bold;
+    padding: 3px;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.shoes:hover {
+    background-color: #F5761A;
+    color: #fff;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 7px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #010202;
+}
+
+.results {
+    flex: 0.8;
+    overflow-y: scroll;
+}
+
+.closeButton {
+    flex: 0.2;
+    text-align: right;
+}
+
+.close {
+    transition: all 0.3s ease;
+}
+
+.close:hover, .close:active {
+    border-radius: 50%;
+    color: #fff;
+    padding: 3px;
+    background-color: #F5761A;;
+}

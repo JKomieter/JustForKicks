@@ -1,0 +1,193 @@
+.Xclusive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding: 0 30px;
+    gap: 10px;
+    margin: 50px 0;
+    height: 400px;
+}
+
+.leftXclusive, .centerXclusive, .rightXclusive {
+    flex: 3.33;
+    height: 400px
+}
+
+.leftXclusive, .rightXclusive {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstXclusive, .secondXclusive, .centerXclusive, .thirdXclusive, .fourthXclusive {
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.firstXclusive:hover, .secondXclusive:hover, .centerXclusive:hover, .thirdXclusive:hover, .fourthXclusive:hover {
+    
+    cursor: pointer;
+}
+
+.firstXclusive {
+    background-image: url("https://images.pexels.com/photos/7543641/pexels-photo-7543641.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 5;
+    height: 100%;
+    width: 100%;
+}
+
+.secondXclusive {
+    flex: 5;
+    background-image: url('https://images.pexels.com/photos/1456706/pexels-photo-1456706.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 5;
+    height: 100%;
+    width: 100%;
+}
+
+.centerXclusive {
+    background-image: url('https://images.pexels.com/photos/9778521/pexels-photo-9778521.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.thirdXclusive {
+    background-image: url('https://images.pexels.com/photos/6692038/pexels-photo-6692038.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 5;
+    height: 100%;
+    width: 100%;
+}
+
+.fourthXclusive {
+    background-image: url('https://images.pexels.com/photos/10726876/pexels-photo-10726876.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 5;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .Xclusive {
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .leftXclusive {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        width: 100%;
+    }
+    .rightXclusive {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        width: 100%;
+    }
+    .centerXclusive {
+        height: 100%;
+    }
+}
+
+
+.firstXclusive {
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    flex-direction: column;
+    gap: 10px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.xOne {
+    font-size: 110%;
+    font-weight: bold;
+    border-bottom: 3px solid #ffffff;
+    
+}
+
+.xTwo {
+    font-size: 90%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.xThree {
+    font-size: 85%;
+    text-transform: capitalize;
+}
+
+.centerXclusive {
+    display: flex;
+    justify-content:flex-start;
+    align-items:baseline;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    /* text-shadow: 1px 1px 0.5px rgb(114, 113, 113); */
+}
+
+.yOne {
+    font-size: 130%;
+    color:rgb(88, 88, 255);
+    font-weight: bolder;
+    border-bottom: 3px solid #f8f8f8;
+}
+
+.yTwo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 190%;
+    font-weight: bold;
+}
+
+.xThree {
+    font-size: 85%;
+    text-transform: capitalize;
+    color: #fff;
+    border-bottom: 2px solid #F5761A;
+}
+
+.secondXclusive, .thirdXclusive, .fourthXclusive {
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    flex-direction: column;
+    gap: 10px;
+    text-shadow: 1px 1px 0.1px rgb(170, 168, 168);
+}
+
+.date {
+    color: rgb(88, 88, 255);
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.yellow {
+    color: #ffd000;
+}
