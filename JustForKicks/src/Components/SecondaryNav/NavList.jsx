@@ -1,5 +1,5 @@
 import React from 'react';
-import { IoIosArrowDown } from 'react-icons/io'
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
 import "./SecondaryNav.css"
 import ContentList from '../SearchList/ContentList';
 
@@ -7,7 +7,8 @@ import ContentList from '../SearchList/ContentList';
 class NavList extends React.Component {
     state = {
         showContent: false,
-        display: 'none'
+        display: 'none',
+        arrowUp: true
     }
 
     handleShowContent = (e) => {
@@ -15,7 +16,8 @@ class NavList extends React.Component {
         e.preventDefault();
         this.setState({
             showContent: true,
-            display: 'block'
+            display: 'block',
+            arrowUp: false
         })
     }
 
@@ -24,18 +26,21 @@ class NavList extends React.Component {
         e.preventDefault();
         this.setState({
             showContent: false,
-            display: 'none'
+            display: 'none',
+            arrowUp: true
         })
     }
 
     render() {
         return (
-            <div className='navLists' id={this.props.nav.name} onMouseEnter={this.handleShowContent} onMouseOut={this.handleUnshow}>
+            <div className='navLists' id={this.props.nav.name} onMouseEnter={this.handleShowContent} onClick={this.handleUnshow}>
                 <div className="navName">
                     {this.props.nav.name}
                 </div>
                 <div className="downarrow">
-                    <IoIosArrowDown size={14}/>
+                    { this.state.arrowUp ?
+                        (<IoIosArrowDown size={14}/>) : (<IoIosArrowUp size={14}/>)
+                    }
                 </div>
                 <div className="drop" style={{display: this.state.display}}>
                     {

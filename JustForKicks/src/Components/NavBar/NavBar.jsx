@@ -26,7 +26,7 @@ class NavBar extends React.Component {
          fetch(`https://the-sneaker-database.p.rapidapi.com/search?limit=10&query=${value}`, options)
         .then(response => response.json())
         .then(response => {
-            console.log(response)
+            // console.log(response)
             this.setState({searchList: response})
         })
         .catch(err => console.error(err));

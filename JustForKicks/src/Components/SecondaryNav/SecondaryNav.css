@@ -20,14 +20,16 @@
     text-transform: uppercase;
     font-weight: 500;
     height: 100%;
+    font-family: 'Calibri';
 }
 
 .navLists {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 50px;
     font-size: 106%;
+    width: 100%;
 }
 
 .navLists:hover {
@@ -50,6 +52,9 @@
     color: #fff;
 }
 
+.Menu {
+    display: none;
+}
 
 @media screen and (max-width: 988px) {
     .navs {
@@ -59,6 +64,15 @@
     .menu {
         display:flex;
         color: #fff;
+        width: 50vw;
+    }
+
+    #check:checked ~ .menu {
+        left: 0;
+    }
+
+    .Menu {
+        display: block;
     }
 }
 
@@ -78,7 +92,7 @@
 
 .drop {
     position: absolute;
-    height: 170px;
+    height: 190px;
     overflow: hidden;
     border-radius: 10px;
     display: flex;
@@ -87,10 +101,14 @@
     flex-direction: column;
     gap:10px;
     width: 190px;
+    margin-left: 10px;
     top: 167px;
     background-color: #fff;
     padding: 20px;
     overflow-y: scroll;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: 0.3s ease-in-out;
+
 }
 
 .conList {
@@ -99,9 +117,48 @@
     padding: 10px;
     font-family: 'Calibri';
     font-size: 90%;
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
 .conList:hover {
     background-color: #F5761A;
     color: #fff;
+}
+
+#check {
+    display: none;
+}
+
+.menu {
+    top: 203px;
+    height: 40vh;
+    left: -100%;
+    z-index: 20;
+    position: absolute;
+    background-color: #cecece;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.sideNav {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+    transition: all 0.1s ease-in-out;
+    padding: 5px;
+    font-size: 95%;
+    font-weight: bold;
+}
+
+.sideNav:hover {
+    color: #fff;
+    background-color: #F5761A;
+    cursor: pointer;
 }
