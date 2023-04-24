@@ -1,6 +1,4 @@
 import React from 'react'
-import NavBar from './Components/NavBar/NavBar'
-import SecondaryNav from './Components/SecondaryNav/SecondaryNav'
 import BigImg from './Components/BigImg/BigImg'
 import Tertiary from './Components/Tertiary/Tertiary.jsx'
 import Xclusive from './Components/Xclusive/Xclusive'

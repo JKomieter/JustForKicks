@@ -6,13 +6,13 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    /*  */
     border-radius: 10px;
+    color: #fff;
 }
 
 .shoes {
     margin: 15px 0;
-    color: #000000;
+    color: #fff;
     font-size: 90%;
     font-weight: bold;
     padding: 3px;
@@ -21,8 +21,8 @@
 }
 
 .shoes:hover {
-    background-color: #F5761A;
-    color: #fff;
+    background-color: #fff;
+    color: #F5761A;
     cursor: pointer;
 }
 
@@ -48,6 +48,7 @@
 .closeButton {
     flex: 0.2;
     text-align: right;
+    color: #fff;
 }
 
 .close {
@@ -61,19 +62,3 @@
     background-color: #F5761A;;
 }
 
-.dropDownList {
-    position: absolute;
-    height: 100px;
-    overflow: hidden;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap:10px;
-    width: 100px;
-}
-
-.conList {
-    font-size: 90%;
-}

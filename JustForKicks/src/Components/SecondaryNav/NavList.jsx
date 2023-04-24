@@ -33,13 +33,13 @@ class NavList extends React.Component {
 
     render() {
         return (
-            <div className='navLists' id={this.props.nav.name} onMouseEnter={this.handleShowContent} onClick={this.handleUnshow}>
-                <div className="navName">
+            <div className='navLists' id={this.props.nav.name} onMouseEnter={this.handleShowContent}>
+                <div className="navName" onClick={this.handleUnshow}>
                     {this.props.nav.name}
                 </div>
                 <div className="downarrow">
                     { this.state.arrowUp ?
-                        (<IoIosArrowDown size={14}/>) : (<IoIosArrowUp size={14}/>)
+                        (<IoIosArrowDown size={15}/>) : (<IoIosArrowUp size={14}/>)
                     }
                 </div>
                 <div className="drop" style={{display: this.state.display}}>

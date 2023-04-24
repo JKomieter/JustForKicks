@@ -1,7 +1,7 @@
 import React from 'react'
 import "./SearchList.css"
 import PropTypes from 'prop-types'
-import { IoMdClose } from 'react-icons/io'
+import { IoMdClose } from "react-icons/io"
 
 
 class SearchList extends React.Component {
@@ -34,7 +34,7 @@ class SearchList extends React.Component {
               }
               </div>
               <div className="closeButton">
-                <IoMdClose size={20} color="#000" onClick={this.props.closeResults} className='close'/>
+                <IoMdClose size={30} fontWeight={800} color="#fff" onClick={this.props.closeResults} className='close'/>
               </div>
           </div>
         )

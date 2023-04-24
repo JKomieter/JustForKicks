@@ -1,0 +1,111 @@
+
+
+.destination {
+    margin: 30px auto;
+    padding: 20px 0;
+    font-size: 107%;
+    font-weight: 500;
+    width: 95%;
+    font-family: "Calibri";
+}
+
+.dArrow, .shop {
+    margin-left: 20px;
+}
+
+.shop {
+    color: #F5761A;
+}
+
+.mainContent {
+    width: 95%;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.category {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+.products {
+    flex: 7;
+}
+
+.prodCart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    border: 1px solid #cecdcd;
+    padding: 20px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 130%;
+    font-weight: 600;
+    border-bottom: 1px solid #cecdcd;
+}
+
+.categoryDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    transition: all 0.5s;
+    transform-origin: top;
+}
+
+.catName {
+    font-weight: 110%;
+}
+
+.catList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.catMenu {
+    flex-direction: column;
+    gap: 5px;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    transition: height 0.5s ease-in-out;
+    transform-origin: top;
+}
+
+.item {
+    width: 90%;
+    transition: height 0.5s ease-in-out;
+    transform-origin: top;
+}
+
+.catDrop:hover {
+    cursor: pointer;
+}
+

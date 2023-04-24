@@ -1,10 +1,12 @@
-import {  render, screen } from "@testing-library/react"
-import CoApp from "./CoApp"
-// import matchers from "@testing-library/jest-dom/matchers"
-// expect.extend(matchers)
+import { describe, test, expect } from "vitest";
+import Tertiary from "./Components/Tertiary/Tertiary";
+import { screen, render } from "@testing-library/react";
 
-it("should have hello world", () => {
-    render(<CoApp/>)
-    const message = screen.queryByText(/Hello world/i)
-    expect(message).toBeVisible()
+
+
+describe("Accordion", () => {
+    test("should add two numbers", () => {
+        render(<Tertiary/>)
+        expect(screen.getByText("ONLINE SUPPORT 24/7")).toBeDefined()
+    })
 })
