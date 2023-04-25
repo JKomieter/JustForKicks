@@ -34,7 +34,7 @@ class SearchList extends React.Component {
               }
               </div>
               <div className="closeButton">
-                <IoMdClose size={30} fontWeight={800} color="#fff" onClick={this.props.closeResults} className='close'/>
+                <IoMdClose size={30} fontWeight={800} color="#000" onClick={this.props.closeResults} className='close'/>
               </div>
           </div>
         )

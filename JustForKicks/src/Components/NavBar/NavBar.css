@@ -10,20 +10,19 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ececec;
+    background-color: #ececece0;
     z-index: 999;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-/* .trans {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-} */
+
 
 .logo {
     font-size: 240%;
     font-weight: bold;
     margin: 30px;
     flex: 1;
+    color: rgb(13, 13, 39)
 }
 
 .orange {
@@ -42,7 +41,7 @@
 }
 
 .dropDown {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(13, 13, 39);
     color: #fff;
     height: 100%;
     display: flex;
@@ -189,13 +188,13 @@
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
-    backdrop-filter: blur(20px);
+    background-color: #ffff;
     left: 25px;
     padding: 10px;
     height: 300px;
-    border-radius: 10px;
     font-size: 90%;
     font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .searchList::-webkit-scrollbar {

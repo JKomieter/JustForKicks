@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Calibri', sans-serif;
+  background-color: rgb(249, 249, 255);
 }
 /* 
 #root {

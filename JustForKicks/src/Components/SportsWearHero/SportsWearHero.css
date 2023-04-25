@@ -1,0 +1,62 @@
+.sportsWear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 90%;
+    color: #fff;
+    margin: 20px auto;
+    font-family: "Calibri";
+    background-image: url("https://th.bing.com/th/id/R.1527c2f0bf083428c5901d17d06fdf0b?rik=OwQBwqJTCcZfzg&riu=http%3a%2f%2fallpicts.in%2fdownload%2f20270%2fNike_Basketball_Shoe_Wallpaper_with_The_FlyEase.jpg&ehk=mHVLjaRvSaAiIu%2bVF9p%2fx1n1vG09gWBcTJm2PMIuQqg%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.sporText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 105%;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 70%;
+}
+
+.sportBold {
+    font-size: 250%;
+    font-size: 700;
+}
+
+.bb {
+    font-size: 900;
+}
+
+.info {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sportBtn {
+    padding: 3px 0;
+}
+
+.Btn {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+.Btn:hover, .Btn:active {
+    background-color: #F5761A;
+    border: 1px solid #F5761A;   
+}
+
+
+

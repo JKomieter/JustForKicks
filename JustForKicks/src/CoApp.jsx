@@ -6,6 +6,7 @@ import LandingPage from './LandingPage'
 import AirPage from './Components/AirPage/AirPage'
 
 function CoApp() {
+
   return (
     <>
       <NavBar/>

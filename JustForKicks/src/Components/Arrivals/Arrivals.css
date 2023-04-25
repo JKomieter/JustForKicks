@@ -1,13 +1,14 @@
 .arrivals {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .topArrivals {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +34,7 @@
 }
 
 .arrOne:active, .arrTwo:active, .arrThree:active {
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: #F5761A;
     color: #fff;
 }

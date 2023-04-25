@@ -3,10 +3,11 @@
     justify-content: center;
     align-items: center;
     height: 60vh;
-    padding: 0 30px;
+    padding: 0 ;
     gap: 10px;
-    margin: 50px 0;
+    margin: 50px auto;
     height: 400px;
+    width: 90%;
 }
 
 .leftXclusive, .centerXclusive, .rightXclusive {

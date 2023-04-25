@@ -4,7 +4,7 @@
     font-family:  sans-serif;
     display: flex;
     justify-content: space-between;
-    background-color: #000000;
+    background-color:  rgb(13, 13, 39);
     color: #fff;
 }
 
@@ -49,7 +49,7 @@
 
 .menu {
     display: none;
-    color: #fff;
+    color: #000000;
 }
 
 .Menu {
@@ -103,7 +103,6 @@
     position: absolute;
     height: 190px;
     overflow: hidden;
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,14 +111,15 @@
     width: 190px;
     margin-left: 10px;
     top: 167px;
-    backdrop-filter: blur(20px);
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     padding: 20px;
     overflow-y: scroll;
     transition: all 0.3s ease-in-out;
 }
 
 .conList {
-    color: #fff;
+    color: #000000;
     font-size: 120%;
     padding: 10px;
     font-family: 'Calibri';
@@ -130,7 +130,6 @@
 }
 
 .conList:hover {
-    background-color: #000000;
     color: #F5761A;
 }
 
@@ -144,14 +143,14 @@
     left: -100%;
     z-index: 20;
     position: absolute;
-    backdrop-filter: blur(20px);
+    background-color: #fff;
     color: #000000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-radius: 0 20px 20px 0;
     transition: all 0.5s ease-in-out;
 }
 
@@ -163,12 +162,11 @@
     padding: 5px;
     font-size: 95%;
     font-weight: bold;
-    color: #fff;
+    color: #000000;
 }
 
 .sideNav:hover {
     color: #F5761A;
-    background-color: black;
     cursor: pointer;
     border-radius: 10px;
 }

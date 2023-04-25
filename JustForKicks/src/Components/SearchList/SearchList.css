@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    border-radius: 10px;
     color: #fff;
 }
 
@@ -48,7 +47,6 @@
 .closeButton {
     flex: 0.2;
     text-align: right;
-    color: #fff;
 }
 
 .close {
