@@ -14,7 +14,7 @@
     align-items: center;
     flex-direction: row;
     font-size: 160%;
-    opacity: 0.9;
+    opacity: 0.7;
     font-weight: bolder;
     padding: 10px;
 }
@@ -23,14 +23,15 @@
     flex: 3;
     text-align: center;
     transition: all 0.2s;
+    color: rgba(13, 13, 39, 1);
 }
 
 .arrOne:hover, .arrTwo:hover, .arrThree:hover {
     opacity: 1;
     cursor: pointer;
     border-radius: 20px;
-    background-color: #F5761A;
-    color: #fff;
+    /* color: rgba(13, 13, 39, 1); */
+    color: #F5761A;
 }
 
 .arrOne:active, .arrTwo:active, .arrThree:active {
