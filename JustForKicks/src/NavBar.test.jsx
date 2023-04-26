@@ -15,8 +15,6 @@ describe("NavBar Component", () => {
         fireEvent.focus(inputEl);
         const searchList = document.querySelector(".searchShoes")
         expect(searchList).toBeDefined()
-
-
     })
 
 })
