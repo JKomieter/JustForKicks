@@ -6,7 +6,7 @@ import Offer from './Components/Offer/Offer'
 import Arrivals from './Components/Arrivals/Arrivals'
 import SportsWearHero from './Components/SportsWearHero/SportsWearHero'
 import Featured from './Components/Featured/Featured'
-
+import Footer from './Components/Footer/Footer'
 
 function LandingPage() {
   return (
@@ -19,6 +19,8 @@ function LandingPage() {
       {/* will add a component here */}
       <SportsWearHero/>
       <Featured/>
+      {/* NewsLetter Component */}
+      <Footer/>
     </>
   )
 }

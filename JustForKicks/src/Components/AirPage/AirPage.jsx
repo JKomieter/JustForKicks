@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import TopRated from './TopRated'
 import SortResults from './SortResults'
 import ProductTags from './ProductTags'
+import Footer from '../Footer/Footer'
 
 
 function AirPage() {
@@ -28,8 +29,10 @@ function AirPage() {
             </div>
             <div className="products">
                 <SortResults/>
+                {/* products component will be here */}
             </div>
         </div>
+        <Footer/>
     </div>
   )
 }

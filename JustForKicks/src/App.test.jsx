@@ -4,8 +4,8 @@ import { screen, render } from "@testing-library/react";
 
 
 
-describe("Accordion", () => {
-    test("should add two numbers", () => {
+describe("Tertiary", () => {
+    test("should contain the word", () => {
         render(<Tertiary/>)
         expect(screen.getByText("ONLINE SUPPORT 24/7")).toBeDefined()
     })

@@ -36,6 +36,8 @@ class NavBar extends React.Component {
         e.preventDefault();
         this.setState({searchValue: ''})
     }
+    
+
 
     render() {
         console.log(this.state.searchValue)

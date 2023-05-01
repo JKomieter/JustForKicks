@@ -1,4 +1,11 @@
 
+.airPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
 
 .destination {
     margin: 30px auto;
@@ -22,10 +29,11 @@
     width: 90%;
     margin: 5px auto;
     display: flex;
-    align-items:  baseline;
+    align-items: first baseline;
     justify-content: center;
     flex-direction: row;
     margin: 0 auto;
+    gap: 30px;
 }
 
 .category {
@@ -36,6 +44,17 @@
     flex-direction: column;
     gap: 20px;
     height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .mainContent {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .products {
+        width: 100%;
+    }
 }
 
 .products {
@@ -150,7 +169,7 @@
     align-items: first baseline;
     flex-direction: column;
     gap: 20px;
-    padding: 0 20px;
+    padding: 0 ;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -176,6 +195,7 @@
 
 .sortBy {
     margin-right: 15px;
+    font-size: 80%;
 }
 
 .sortForm {
@@ -186,6 +206,36 @@
     border: 1px solid #cecdcd;
     font-weight: 400;
     padding: 0 5px;
+    max-width: 200px;
+    max-height: 250px;
+}
+
+.sortMenu {
+    position: absolute;
+    max-height: 200px;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    right: 5%;
+    bottom: 7%;
+    border: 1px solid #cecdcd;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+.sort {
+    font-weight: 500;
+    padding: 5px;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.sort:hover {
+    background-color: rgb(109, 109, 109);
+    color: #fff;
 }
 
 .tags {
@@ -195,6 +245,7 @@
     align-items: center;
     gap: 15px;
 }
+
 
 .tag {
     border: 1px solid #cecdcd;

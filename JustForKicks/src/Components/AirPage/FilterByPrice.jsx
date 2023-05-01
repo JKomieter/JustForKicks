@@ -19,12 +19,13 @@ function FilterByPrice() {
                 <Slider value={range} onChange={handleChanges} valueLabelDisplay="auto"/>
             </div>
             <div className='filterBtn'>
+                {/* will add a routes for changing the query results */}
                 <Button variant="contained" color="success" className='filBtn'>
                     <b>Filter</b>
                 </Button>
             </div>
             <div className="range">
-                Price: <span className='priceRange'>$0 - $100</span>
+                <span className='price'>Price:</span> <span className='priceRange'>$0 - $100</span>
             </div>
         </div>
     )

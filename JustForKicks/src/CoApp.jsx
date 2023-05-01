@@ -14,6 +14,7 @@ function CoApp() {
       <Routes>
         <Route path='/' element={<LandingPage/>}/>
         <Route path="/shop" element={<AirPage/>}/>
+        {/* Add more routes for */}
       </Routes>
     </>
   )
