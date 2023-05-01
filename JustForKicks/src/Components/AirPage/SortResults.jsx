@@ -12,6 +12,7 @@ function SortResults() {
 
     const handleSort = (value) => {
         console.log(value)
+        setSort(value)
         setDisplay("none")
     }
 
